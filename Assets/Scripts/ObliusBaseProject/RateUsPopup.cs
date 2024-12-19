@@ -79,8 +79,9 @@ public class RateUsPopup : MonoBehaviour
 
 	void Show ()
 	{
-		ObliusNativeRatePopup ratePopUp = new ObliusNativeRatePopup ("Do you like the game?", "Rate us, please", "Rate Us", "No, Thanks", "Later");
-		ratePopUp.SetAppleId (appleID);
+		/*ObliusNativeRatePopup ratePopUp = new ObliusNativeRatePopup ("Do you like the game?", "Rate us, please", "Rate Us", "No, Thanks", "Later");
+		*/
+		/*ratePopUp.SetAppleId (appleID);
 		ratePopUp.SetAndroidAppUrl (androidAppURL);
 
 		ratePopUp.AddDeclineListener (() => {
@@ -101,7 +102,7 @@ public class RateUsPopup : MonoBehaviour
 		});
 
 		ratePopUp.Show ();
-		showing = true;
+		showing = true;*/
 	}
 
 

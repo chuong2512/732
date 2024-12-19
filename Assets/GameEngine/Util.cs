@@ -16,10 +16,10 @@ public class Util : MonoBehaviour {
 
     public static void ShowPopUp(string title,string dialogmessage){
 		
-		ObliusNativePopup popup = new ObliusNativePopup (title, dialogmessage);
-		popup.AddAction ("OK", () => {Debug.Log("ok pressed");});
+		//ObliusNativePopup popup = new ObliusNativePopup (title, dialogmessage);
+		/*popup.AddAction ("OK", () => {Debug.Log("ok pressed");});
 		popup.AddDismissListener (() => {Debug.Log("dismiss listener");});
-		popup.Show ();
+		popup.Show ();*/
 
 }
 
