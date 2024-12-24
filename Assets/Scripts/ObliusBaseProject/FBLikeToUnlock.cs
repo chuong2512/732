@@ -2,7 +2,6 @@
 using System.Collections;
 using UnityEngine.Events;
 using System;
-using Oblius.Assets.AllInOneAdnetworks;
 
 public class FBLikeToUnlock : MonoBehaviour
 {
@@ -45,11 +44,11 @@ public class FBLikeToUnlock : MonoBehaviour
 
 			int timeDifference = GetCurrentTime () - GetPageLikedDate ();
 
-			if (timeDifference > 3600) {
+			/*if (timeDifference > 3600) {
 				AdNetworksManager.instance.gameObject.SetActive (true);
 			} else {
 				AdNetworksManager.instance.gameObject.SetActive (false);
-			}
+			}*/
 
 			yield return new WaitForSeconds (2);
 		}

@@ -89,3 +89,7 @@ crashlytics-build.properties
 /Assets/Bakery/ftGlobalStorage.asset.meta
 /Assets/Bakery/ftLocalStorage.asset
 /Assets/Bakery/ftLocalStorage.asset.meta
+
+*.rar
+*.zip
+*.a

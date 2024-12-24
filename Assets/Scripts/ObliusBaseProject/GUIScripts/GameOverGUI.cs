@@ -2,7 +2,6 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using Oblius.Assets.AllInOneAdnetworks;
 
 public class GameOverGUI : MonoBehaviour {
 
@@ -27,7 +26,7 @@ public class GameOverGUI : MonoBehaviour {
     public void OnGetCoinButtonClick()
     {
         SoundsManager.instance.PlayMenuButtonSound();
-		AdNetworksManager.instance.ShowRewardedVideo ((bool value) => 
+		/*AdNetworksManager.instance.ShowRewardedVideo ((bool value) => 
 			{
 				if(value){
 					onGetCoinVideoEntirelyWatched.Invoke();
@@ -39,7 +38,7 @@ public class GameOverGUI : MonoBehaviour {
 					onGetCoinVideoSkipped.Invoke();
 				}
 			}
-		);
+		);*/
         GetCoinButton.interactable = false;
     }
 

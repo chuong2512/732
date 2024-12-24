@@ -1,0 +1,7 @@
+Car Vs Cops is an exceptionally entertaining 2D car simulation game。
+
+Control the car to turn around, escape the police pursuit and can subtly crash the police car.
+
+#Game Features:
+1. Different cars have different speeds, attributes, and turning radii.
+1. More than 12 different beautiful car models, with more features and capabilities

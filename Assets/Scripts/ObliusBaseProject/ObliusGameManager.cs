@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Oblius.Assets.AllInOneAdnetworks;
 
 public class ObliusGameManager : MonoBehaviour
 {
@@ -60,12 +59,12 @@ public class ObliusGameManager : MonoBehaviour
         gameWheelControl.SetActive(false);
         yield return new WaitForSeconds(delay);
         SoundsManager.instance.PlayGameOverSound();
-        AdNetworksManager.instance.HideBanner();
+        //AdNetworksManager.instance.HideBanner();
 
         Leaderboard.instance.reportScore(ScoreHandler.instance.score);
         GUIManager.instance.ShowGameOverGUI();
         InGameGUI.instance.gameObject.SetActive(false);
-        AdNetworksManager.instance.ShowInterstitial(() => Debug.Log("Interstitial Closed"));
+        //AdNetworksManager.instance.ShowInterstitial(() => Debug.Log("Interstitial Closed"));
     }
 
 
@@ -85,7 +84,7 @@ public class ObliusGameManager : MonoBehaviour
         ScoreHandler.instance.incrementNumberOfGames();
         GUIManager.instance.ShowInGameGUI();
         //GUIManager.instance.tutorialGUI.ShowIfNeverAppeared();
-        AdNetworksManager.instance.ShowBanner();
+        //AdNetworksManager.instance.ShowBanner();
         gameState = GameState.game;
         gameWheelControl.SetActive(true);
 

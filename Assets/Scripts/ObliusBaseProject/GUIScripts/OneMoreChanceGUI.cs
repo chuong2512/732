@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;
-using Oblius.Assets.AllInOneAdnetworks;
 
 public class OneMoreChanceGUI : MonoBehaviour {
    
@@ -22,13 +21,13 @@ public class OneMoreChanceGUI : MonoBehaviour {
     {
         SoundsManager.instance.PlayMenuButtonSound();
 
-		AdNetworksManager.instance.ShowRewardedVideo ((bool value) => {
+		/*AdNetworksManager.instance.ShowRewardedVideo ((bool value) => {
 			if(value){
 				onRewardVideoSuccess.Invoke();
 			}else{
 				onRewardVideoFail.Invoke();
 			}
-		});
+		});*/
 
         Deactivate();
     }
